@@ -53,4 +53,13 @@ public class Agencia
         }
         return -1;
     }
+
+    public String listar ()
+    {
+        StringBuilder sb= new StringBuilder();
+        for (int i = 0; i < agencia.size(); i++) {
+            sb.append(agencia.get(i).toString());
+        }
+        return agencia.size()!=0?sb.toString(): "No hay elementos";
+    }
 }
