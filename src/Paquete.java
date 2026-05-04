@@ -13,7 +13,7 @@ public class Paquete
         this.destino = destino;
         this.origen = origen;
         this.receptor = receptor;
-        estado= "Receptado";
+        estado= "RECEPTADO";
     }
     public void setEstado(String estado)
     {

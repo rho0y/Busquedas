@@ -46,7 +46,7 @@ public class Ventana {
                 int numero=Integer.parseInt(spiNumero.getValue().toString());
                 int indice=norte.buscarBinario(numero);
                 if(indice!=-1){
-                    txtListar.setText(norte.getValor(indice).toString());
+                    txtListar.setText(  norte.getValor(indice).toString());
                 }else{
                     JOptionPane.showMessageDialog(null,
                             "No existe");

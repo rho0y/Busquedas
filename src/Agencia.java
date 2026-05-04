@@ -9,6 +9,11 @@ public class Agencia
         agencia=new ArrayList<>();
     }
 
+    public Paquete getValor(int indice)
+    {
+        return agencia.get(indice);
+    }
+
     public boolean agregar(Paquete paquete)
     {
         if (agencia.isEmpty())
@@ -61,5 +66,5 @@ public class Agencia
             sb.append(agencia.get(i).toString());
         }
         return agencia.size()!=0?sb.toString(): "No hay elementos";
-    }
+        }
 }
